@@ -13,6 +13,9 @@ struct LoginView: View {
     var body: some View {
         NavigationStack{
             VStack{
+                Spacer()
+                
+                
                 Image("Messenger-Logo")
                     .resizable()
                     .scaledToFit()
@@ -22,8 +25,18 @@ struct LoginView: View {
                 
                 VStack{
                     TextField("Enter your email", text: $email)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 24)
                     
                     SecureField("Enter your password", text: $password)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 24)
                 }
                 
                 
@@ -37,13 +50,21 @@ struct LoginView: View {
                         .padding(.trailing, 28)
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
+                .foregroundColor(Color(.systemMint))
                 
                 
                 Button{
                     print("Handle login")
                 } label: {
                     Text("Login")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 360, height: 44)
+                        .background(Color(.systemMint))
+                        .cornerRadius(10)
                 }
+                .padding(.vertical)
                 
                 
                 HStack{
@@ -61,14 +82,14 @@ struct LoginView: View {
                 
                 
                 HStack{
-                    Image("Facebook-Logo")
+                    Image("Facebook-Logo-2")
                         .resizable()
                         .frame(width: 20, height: 20)
                     
                     Text("Continue with Facebook")
                         .font(.footnote)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color(.systemBlue))
+                        .foregroundColor(Color(.systemMint))
                 }
                 .padding(.top, 8)
                 
@@ -91,6 +112,7 @@ struct LoginView: View {
                     .font(.footnote)
                 }
                 .padding(.vertical)
+                .foregroundColor(Color(.systemMint))
                 
                 
             }
