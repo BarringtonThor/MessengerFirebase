@@ -60,6 +60,37 @@ struct LoginView: View {
                 .foregroundColor(.gray)
                 
                 
+                HStack{
+                    Image("Facebook-Logo")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                    
+                    Text("Continue with Facebook")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color(.systemBlue))
+                }
+                .padding(.top, 8)
+                
+                
+                Spacer()
+                
+                
+                Divider()
+                
+                
+                NavigationLink{
+                    Text("Sign up View")
+                } label: {
+                    HStack(spacing: 3){
+                        Text("Don't have an account?")
+                        
+                        Text("Sign Up")
+                            .fontWeight(.semibold)
+                    }
+                    .font(.footnote)
+                }
+                .padding(.vertical)
                 
                 
             }
