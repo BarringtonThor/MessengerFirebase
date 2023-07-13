@@ -27,7 +27,15 @@ struct InboxRowView: View {
                     .frame(maxWidth: UIScreen.main.bounds.width - 100, alignment: .leading)
             }
             
+            HStack {
+                Text("Yesterday")
+                
+                Image(systemName: "chevron.right")
+            }
+            .font(.footnote)
+            .foregroundColor(.gray)
         }
+        .frame(height: 72)
     }
 }
 
