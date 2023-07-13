@@ -12,6 +12,10 @@
 		0FE9F38C2A5E479400C69153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE9F38B2A5E479400C69153 /* Assets.xcassets */; };
 		0FE9F38F2A5E479400C69153 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE9F38E2A5E479400C69153 /* Preview Assets.xcassets */; };
 		0FE9F39E2A5E4AD200C69153 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9F39D2A5E4AD200C69153 /* LoginView.swift */; };
+		0FE9F3A02A5F67C400C69153 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9F39F2A5F67C400C69153 /* RegistrationView.swift */; };
+		0FE9F3A32A5F761200C69153 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9F3A22A5F761200C69153 /* InboxView.swift */; };
+		0FE9F3A62A5F7AB700C69153 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9F3A52A5F7AB700C69153 /* ActiveNowView.swift */; };
+		0FE9F3A82A5F7E3000C69153 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9F3A72A5F7E3000C69153 /* InboxRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		0FE9F38B2A5E479400C69153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FE9F38E2A5E479400C69153 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FE9F39D2A5E4AD200C69153 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0FE9F39F2A5F67C400C69153 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		0FE9F3A22A5F761200C69153 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		0FE9F3A52A5F7AB700C69153 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		0FE9F3A72A5F7E3000C69153 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				0FE9F3992A5E48B200C69153 /* App */,
-				0FE9F3982A5E48AD00C69153 /* Core */,
 				0FE9F3952A5E488E00C69153 /* Extensions */,
+				0FE9F3982A5E48AD00C69153 /* Core */,
 				0FE9F3972A5E489D00C69153 /* Model */,
 				0FE9F3962A5E489600C69153 /* Service */,
 				0FE9F38B2A5E479400C69153 /* Assets.xcassets */,
@@ -96,7 +104,9 @@
 		0FE9F3982A5E48AD00C69153 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				0FE9F3A42A5F7A9800C69153 /* ActiveNow */,
 				0FE9F39A2A5E4A2400C69153 /* Authentication */,
+				0FE9F3A12A5F75C100C69153 /* Inbox */,
 				0FE9F39B2A5E4A5C00C69153 /* Root */,
 			);
 			path = Core;
@@ -130,8 +140,26 @@
 			isa = PBXGroup;
 			children = (
 				0FE9F39D2A5E4AD200C69153 /* LoginView.swift */,
+				0FE9F39F2A5F67C400C69153 /* RegistrationView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0FE9F3A12A5F75C100C69153 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				0FE9F3A22A5F761200C69153 /* InboxView.swift */,
+				0FE9F3A72A5F7E3000C69153 /* InboxRowView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		0FE9F3A42A5F7A9800C69153 /* ActiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				0FE9F3A52A5F7AB700C69153 /* ActiveNowView.swift */,
+			);
+			path = ActiveNow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FE9F3A82A5F7E3000C69153 /* InboxRowView.swift in Sources */,
 				0FE9F39E2A5E4AD200C69153 /* LoginView.swift in Sources */,
 				0FE9F38A2A5E479300C69153 /* ContentView.swift in Sources */,
+				0FE9F3A32A5F761200C69153 /* InboxView.swift in Sources */,
+				0FE9F3A62A5F7AB700C69153 /* ActiveNowView.swift in Sources */,
 				0FE9F3882A5E479300C69153 /* MessengerFirebaseApp.swift in Sources */,
+				0FE9F3A02A5F67C400C69153 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
