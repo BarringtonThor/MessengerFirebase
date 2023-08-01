@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0FCB40DA2A71DB2000EA0AB8 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB40D92A71DB2000EA0AB8 /* SettingsOptionsViewModel.swift */; };
+		0FCB40DC2A71F5F600EA0AB8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB40DB2A71F5F600EA0AB8 /* ProfileViewModel.swift */; };
+		0FCB40DE2A784ED000EA0AB8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB40DD2A784ED000EA0AB8 /* User.swift */; };
 		0FE9F3882A5E479300C69153 /* MessengerFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9F3872A5E479300C69153 /* MessengerFirebaseApp.swift */; };
 		0FE9F38A2A5E479300C69153 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9F3892A5E479300C69153 /* ContentView.swift */; };
 		0FE9F38C2A5E479400C69153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FE9F38B2A5E479400C69153 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		0FCB40D92A71DB2000EA0AB8 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		0FCB40DB2A71F5F600EA0AB8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		0FCB40DD2A784ED000EA0AB8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0FE9F3842A5E479300C69153 /* MessengerFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE9F3872A5E479300C69153 /* MessengerFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerFirebaseApp.swift; sourceTree = "<group>"; };
 		0FE9F3892A5E479300C69153 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		0FE9F3972A5E489D00C69153 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0FCB40DD2A784ED000EA0AB8 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				0FCB40D92A71DB2000EA0AB8 /* SettingsOptionsViewModel.swift */,
+				0FCB40DB2A71F5F600EA0AB8 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +286,8 @@
 				0FE9F38A2A5E479300C69153 /* ContentView.swift in Sources */,
 				0FE9F3A32A5F761200C69153 /* InboxView.swift in Sources */,
 				0FE9F3A62A5F7AB700C69153 /* ActiveNowView.swift in Sources */,
+				0FCB40DC2A71F5F600EA0AB8 /* ProfileViewModel.swift in Sources */,
+				0FCB40DE2A784ED000EA0AB8 /* User.swift in Sources */,
 				0FE9F3882A5E479300C69153 /* MessengerFirebaseApp.swift in Sources */,
 				0FCB40DA2A71DB2000EA0AB8 /* SettingsOptionsViewModel.swift in Sources */,
 				0FE9F3A02A5F67C400C69153 /* RegistrationView.swift in Sources */,
